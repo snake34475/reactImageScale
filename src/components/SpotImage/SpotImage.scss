@@ -1,0 +1,233 @@
+.car-detail-spot-image{
+    
+    position: relative;
+    padding-top: .4rem;
+
+    .detail-carousel-wrap{
+        -webkit-backface-visibility: hidden;
+        -webkit-transform-style: preserve-3d;
+        position: relative;
+        height: 4.5rem;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .arrow-left-icon,
+    .arrow-right-icon{
+        width: .7rem;
+        height: .7rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 11;
+        overflow: hidden;
+    }
+
+    .arrow-left-icon{
+        background: url("./assets/left.png") no-repeat center center;
+        left:.22rem;
+        background-size: 30%;
+    }
+
+    .arrow-right-icon{
+        background: url("./assets/right.png") no-repeat center center;
+        right:.22rem;
+        background-size: 30%;
+    }
+ 
+    .line-flow {
+        position: relative;
+        padding: 0 .3rem;
+    }
+    .line-flow:after{
+        content:".";
+        display:block;
+        height:0;
+        visibility:hidden;
+        clear:both;
+    }
+
+    .number {
+        display: inline-block;
+        width:16px;/*no*/
+        height:16px;/*no*/
+        font-style:normal;
+        left:0;
+        top:0;
+        color: #fff;
+        text-align: center;
+        background-color: #FFE100;
+        line-height: 16px;/*no*/
+        border-radius: 50%;
+        margin-right: .1rem;
+    }
+    
+    .pagination-style {
+        float: right;
+        width:30%;
+        opacity: 0.5;
+        font-size: .24rem;
+        font-weight: 500;
+        text-align: right;
+        color: #000;
+        padding-top: 0.3rem;
+    }
+
+    .flow-img-detail {
+        float: left;
+        font-size: .22rem;
+        text-align: left;
+        color: #000;
+        line-height: .32rem;
+        padding-top: 0.3rem;
+    }
+
+  
+
+    &.v3Flaw{    
+        .flow-img-detail .number{
+            background-color: #FFE100;
+        }
+    }
+
+
+
+    /* 20180320 */
+    .point-pannel,.point-pannel-repair{
+        position: absolute;
+        width: .32rem;
+        height: .36rem;
+    }
+
+    .point-pannel{
+        background: url(./assets/point.png) no-repeat;
+        background-size: 100%;
+    }
+
+    .point-pannel-repair{
+        background: url(./assets/point-repair.png) no-repeat;
+        background-size: 100%;
+    }
+
+    .text-pannel {
+        display: inline-block;
+        font-size: .22rem;
+        letter-spacing: 0.7px;/*no*/
+        text-align: left;
+        color: #ffffff;
+        line-height: .36rem;
+    }
+
+    .r{
+        position: absolute;
+        background:rgba(0,0,0,.5);
+        text-align: right;
+        left:0;
+        margin-left: .47rem;
+        top:0;
+        word-break:keep-all;
+        white-space: nowrap;
+        padding: .002rem .1rem;
+        border-top-right-radius: .06rem;
+        border-bottom-right-radius: .06rem;
+        height: .36rem;
+        line-height: .38rem;
+        box-sizing: border-box;
+    }
+    .r:before{
+        content: '';
+        position: absolute;
+        background: url(./assets/leftTriggle.png) no-repeat;
+        background-size: 100%;
+        width: .16rem;
+        height: .36rem;
+        left: -.16rem;
+        top: 0;
+    }
+
+    .l {
+        position: absolute;
+        background:rgba(0,0,0,.5);
+        text-align: left;
+        right:0;
+        margin-right: .46rem;
+        top:0;
+        word-break:keep-all;
+        white-space: nowrap;
+        padding: .001rem .1rem;
+        border-top-left-radius: .06rem;
+        border-bottom-left-radius: .06rem;
+        height: .36rem;
+        line-height: .38rem;
+        box-sizing: border-box;
+    }
+
+    .l:before {
+        content: '';
+        position: absolute;
+        background: url(./assets/rightTriggle.png)  no-repeat;
+        background-size: 100%;
+        width: .16rem;
+        height: .36rem;
+        right: -.16rem;
+        top: 0;
+    }
+
+    // .point-wrap{
+    //     position: absolute;
+    //     font-size: 0;
+    //     box-sizing: unset;
+    //     white-space: nowrap;
+        
+    //     .flaw_desc{
+    //         display: inline-block;
+    //         vertical-align: text-bottom;
+    //         letter-spacing: 0.7px;
+    //         text-align: left;
+    //         color: #ffffff;
+    //         line-height: .36rem;
+    //         white-space: nowrap;
+    //         font-size: .22rem;
+       
+    //     }
+    //     .flaw_desc-l{
+    //         position: absolute;
+    //         display: inline-block;
+    //         right: 0.48rem;
+    //         padding-left: .1rem;
+    //         padding-right: .08rem;  
+    //         border-top-left-radius: .06rem;
+    //         border-bottom-left-radius: .06rem;  
+    //         background:rgba(0,0,0,.5);  
+    //     }
+
+    //     .flaw_desc-r{
+    //         position: relative;
+    //         display: inline-block;
+    //         margin-left: .16rem;
+    //         padding-right: .1rem;
+    //         border-top-right-radius: .06rem;
+    //         border-bottom-right-radius: .06rem;
+    //         padding-left: .08rem;     
+    //         background:rgba(0,0,0,.5);
+    //     }
+    //     .r,.l{
+    //         display:inline-block;
+    //         width:  0.15rem;
+    //         height: .36rem;
+    //         position: absolute;
+    //         top: 0px;
+    //     }
+    //     .r{  
+    //         left: -.15rem;
+    //         background: url(./assets/leftTriggle.png) no-repeat;
+    //         background-size: 100%;
+    //     }
+    //     .l{
+    //         right: -.15rem;
+    //         background: url(./assets/rightTriggle.png) no-repeat;
+    //         background-size: 100%;
+    //     }
+    // }
+}
+

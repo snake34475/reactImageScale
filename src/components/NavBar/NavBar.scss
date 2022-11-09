@@ -1,0 +1,34 @@
+.nav-bar{
+    line-height: 45px;
+    background: #fff;
+    font-size: 15px;
+    color: #1b1b1b;
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid #e6e5e5;/*no*/
+}
+.nav-bar a{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: solid #ff5a37;
+    border-width: 0 0 1.5px 1.5px;/*no*/
+    -webkit-transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    left: .3rem;
+    margin-top: -0.1rem;
+}
+.nav-bar-black{
+    line-height: 45px;
+    font-size: 15px;
+    color: #1b1b1b;
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid #e6e5e5;/*no*/
+
+    background: #000;
+    border-bottom-width: 0;
+    color: #fff;
+    font-weight: 600;
+}
