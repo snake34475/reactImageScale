@@ -1,7 +1,7 @@
 import React from 'react';
 import Tabs from "./components/Tabs/Tabs"
 import SpotImage from './components/SpotImage/SpotImage';
-import SwiperItems from "./components/SwiperItems/SwiperItems"
+import SwiperItems from "./components/SwiperItems/SwiperItems";
 import './index.scss';
 import "./components/NavBar/NavBar.scss"
 export default class ImageTest extends React.Component {

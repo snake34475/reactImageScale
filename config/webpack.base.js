@@ -6,43 +6,34 @@
  * Description
  */
 module.exports = {
-  module: {
-    rules: [
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader'
-      },
-      {
-        test: /\.css$/,
-        exclude: /node_modules/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true
-            }
-          }
-        ]
-      },
-      {
-        // test: /\.scss|sass$/,
-        test: /\.scss$/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: { modules: true, sourceMap: true },
-          },
-          {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: true,
+    module: {
+        rules: [
+            {
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader'
             },
-          },
+            {
+                test: /\.css$/,
+                exclude: /node_modules/,
+                use: [
+                    'style-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            modules: true
+                        }
+                    }
+                ]
+            },
+            {
+                test: /\.scss$/,
+                use: [
+                    'style-loader',
+                    'css-loader', "sass-loader",
+
+                ]
+            }
         ]
-      }
-    ]
-  }
+    }
 };

@@ -28,7 +28,6 @@ class App extends React.Component {
 
     render() {
         const {currentIndex, toURL} = this.state
-        console.log("currentIndex", currentIndex)
         return (
             <div className="App">
                 <BigImgView imgData={dataArr()} currentIndex={currentIndex} changeCurrent={this.changeCurrent}

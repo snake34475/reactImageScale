@@ -1,6 +1,6 @@
 {
-  "name": "reactImageScale",
-  "version": "1.0.0",
+  "name": "reactimagescale",
+  "version": "0.1.0",
   "description": "",
   "main": "lib/index.js",
   "scripts": {

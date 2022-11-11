@@ -1,0 +1,7 @@
+/*! Hammer.JS - v2.0.7 - 2016-04-22
+ * http://hammerjs.github.io/
+ *
+ * Copyright (c) 2016 Jorik Tangelder;
+ * Licensed under the MIT license */
+
+/**!important 心愿单时是根据传入dom来定位 更改此方法前请查看scrollAnimate调用位置并确保各个情况功能 */
